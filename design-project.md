@@ -14,23 +14,31 @@ With my other ML projects and personal theories for algorithmic trading, this pr
 Requirements:
 
   Functional Requirements:
-
+    Market Data Ingestion
+      Fetch live market data from API
+      Process multiple dta feeds concurrently
+    Trading strategy engine
+      Evaluate market data 
+      Implement various strategies
+    Dashboard
+      Display results
 
   Non-functional Requirements
-  
-  
-  Use Cases
-
+    Speed/low latency
+    Scalability
+    Security
+    User friendliness
 
 High-Level Design
-   - Architecture Diagram
-   - Module Descriptions
-   - Data Flow Diagram
+    Market Data Ingestion 
+    Trading Strategy Engine
+    Order execution
+    Dashboard
 
-6. Detailed Design
-   - Module A: Responsibilities, Interfaces, Data Structures
-   - Module B: Responsibilities, Interfaces, Data Structures
-   - External Interfaces
+Detailed Design
+   Market Data Ingestion Module
+     Fetch Data from various sources
+     
 
 7. Considerations
    - Alternative Designs
