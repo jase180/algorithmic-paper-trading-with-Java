@@ -20,6 +20,7 @@ Requirements:
     Trading strategy engine
       Evaluate market data 
       Implement various strategies
+    Order Execution
     Dashboard
       Display results
 
@@ -37,14 +38,36 @@ High-Level Design
 
 Detailed Design
    Market Data Ingestion Module
-     Fetch Data from various sources
-     
+     PURPOSE:
+       Fetch Data from various sources
+     Design considerations:
+       Utilize Spring
+       Utilize ExecutorService
+     Key components
+       GET from polygon API
 
-7. Considerations
-   - Alternative Designs
-   - Risks and Mitigation
-   - Limitations
+    Trading Strategy engine
+      Evaluate marking data and apply strategy
+       Use @Async
 
-8. Implementation Plan
-   - Timeline and Milestones
-   - Testing Strategy
+    Order execution
+      Keep track of trades
+
+    Dashboard
+      Provide user a clear performance visualization
+
+Dataflow
+  Market Data -> Strategy selection -> Order execution and keep track -> Dashboard
+
+Testing
+  Unit testing with JUnit
+  Integration Testing
+  Optional:
+    performance testing
+
+Deployment
+  Containerization
+    Docker
+  Ci/CD
+    Jenkins
+
